@@ -1,0 +1,9 @@
+.howpic:hover {
+  /* background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-childrens-clothing-brands-1643023067.png?crop=0.837xw:0.648xh;0.109xw,0.140xh&resize=640:*) !important; */
+  width: 15px;
+  /* z-index: 100 !important; */
+}
+
+.title {
+  color: blue;
+}

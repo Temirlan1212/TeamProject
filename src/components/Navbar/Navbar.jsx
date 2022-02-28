@@ -21,7 +21,7 @@ import ScrollToColor01 from "../../ScrollToHide";
 import classes from "./Navbar.module.css";
 
 const pages = [
-  { name: "PRODUCTS", link: "/products", id: 1 },
+  { name: "KIDS", link: "/products", id: 1 },
   { name: "ABOUT US", link: "/aboutus", id: 2 },
   { name: "CONTACTS", link: "/contacts", id: 3 },
   { name: "HOME", link: "/", id: 4 },

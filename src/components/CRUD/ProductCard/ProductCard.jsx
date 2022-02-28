@@ -9,6 +9,7 @@ import { useProducts } from "../../../contexts/ProductContext";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../../contexts/AuthContext";
 import { ADMIN } from "../../../helpers/consts";
+import "./ProductCard.module.css";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { IconButton } from "@mui/material";
 
@@ -21,10 +22,16 @@ export default function MediaCard({ item }) {
   const navigate = useNavigate();
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia component="img" height="140" alt="green iguana" />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+    <Card sx={{ maxWidth: 345, margin: 1 }}>
+      <CardMedia
+        component="img"
+        height="280"
+        className="howpic"
+        image={item.picture}
+        alt="green iguana"
+      />
+      <CardContent sx={{ background: "#ccff90" }}>
+        <Typography gutterBottom variant="h5" component="div" className="title">
           {item.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
