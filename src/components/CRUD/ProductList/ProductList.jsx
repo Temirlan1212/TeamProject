@@ -38,7 +38,7 @@ const ProductList = () => {
   }, [search]);
 
   return (
-    <div style={{ backgroundColor: "green", height: "100VH" }}>
+    <div style={{ backgroundColor: "yellow", height: "100VH" }}>
       <div
         style={{
           display: "flex",

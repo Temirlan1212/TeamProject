@@ -1,12 +1,20 @@
 {
   "products": [
     {
-      "name": "sndfjknsdfnm,nm,n",
-      "description": "lj",
+      "name": "kurtka",
+      "description": "teplyi",
+      "price": 100,
+      "picture": "https://media1.popsugar-assets.com/files/thumbor/ICuFJn7n3UUD1dhvWoO0JVCpuQw/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2021/10/06/913/n/24155406/5ff37d40615e0d3ed75611.77240046_/i/best-free-assembly-kids-clothes-at-walmart.jpg",
+      "type": "zima",
+      "id": 2
+    },
+    {
+      "name": "asddsa",
+      "description": "asdasd",
       "price": null,
-      "picture": "jlkjdflkjlk;jq",
-      "type": "lkjflkjc",
-      "id": 1
+      "picture": "https://i.insider.com/61016d55f350d50019596197?width=700",
+      "type": "sads",
+      "id": 3
     }
   ]
 }

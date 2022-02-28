@@ -43,11 +43,11 @@ const AddProduct = () => {
       <Grid
         item
         xs={12}
-        md={6}
+        md={8}
         sx={{
           margin: "10vh auto",
           boxShadow: 3,
-          borderRadius: 3,
+          borderRadius: 5,
         }}
       >
         <form>
@@ -89,18 +89,19 @@ const AddProduct = () => {
             label="TYPE"
             variant="outlined"
             name="type"
-            onChange={handleInp}  
+            onChange={handleInp}
           />
           <Stack direction="row" spacing={2} sx={{ bgcolor: "#880e4f" }}>
             <Button
               id="button"
               sx={{
-                bgcolor: "#263238",
-                borderColor: "error.main",
+                bgcolor: "#0277bd",
+                borderColor: "#f5f5f5",
                 fontFamily: "Monospace",
+                color: "white",
               }}
+              color="warning"
               variant="outlined"
-              color="error"
               size="large"
               fullWidth
               onClick={() => {
