@@ -1,0 +1,126 @@
+.aboutWrapper {
+  max-width: 95vw;
+  margin: 0 auto;
+}
+
+.partFirst {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(252, 185, 197);
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.firstTitle {
+  max-width: 40vw;
+  display: flex;
+  margin: 0 auto;
+}
+.firstTitleSub {
+  width: 20vw;
+  font-family: "PT Serif", serif;
+  color: white;
+  font-size: 4vh;
+}
+.aboutImg {
+  max-width: 50vw;
+}
+
+.partSecond {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.aboutTwoTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(223, 111, 204);
+  width: 30%;
+}
+
+.aboutTwoTitleSub {
+  transform: rotate(270deg);
+  font-size: 8vh;
+}
+
+.partSecondDesc {
+  height: 100vh;
+  width: 50vw;
+  font-size: 2.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 150px;
+  background-color: white;
+}
+
+.partSecondLast {
+  background-color: rgb(248, 120, 120);
+  width: 30%;
+}
+
+.partThird {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partThirdImg {
+  width: 50vw;
+}
+
+.partThirdDescr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  background-color: rgb(156, 80, 226);
+  color: white;
+  font-size: 3vh;
+}
+
+@media screen and (max-width: 811px) {
+  .partSecondDesc {
+    height: 100vh;
+    width: 50vw;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 50px;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 347px) {
+  .firstTitleSub {
+    width: 20vw;
+    font-family: "PT Serif", serif;
+    color: white;
+    font-size: 2vh;
+  }
+
+  .partSecondDesc {
+    height: 100vh;
+    width: 50vw;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: white;
+  }
+  .partThirdDescr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    background-color: rgb(156, 80, 226);
+    color: white;
+    font-size: 2vh;
+  }
+}
