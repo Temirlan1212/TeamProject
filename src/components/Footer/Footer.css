@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  padding-top: 10vh;
+  height: 70vh;
+  width: 100vw;
+  background-image: url("https://www.acmetc.com/wp-content/uploads/2019/04/cloud-pink.png");
+  background-size: cover;
+}
+
+.footer__text {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  font-family: "PT Serif", serif;
+}
+
+.footer__text_item li {
+  list-style-type: none;
+  color: #2c2c2b;
+  font-family: "PT Serif", serif;
+}
+
+.footer__text_item ul {
+  display: flex;
+  flex-direction: column;
+}
+
+ol {
+  color: rgb(3, 3, 3);
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 0;
+}
+
+.icon_elem {
+  display: flex;
+  margin-top: 3.5vh;
+}
+.rights {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15vh;
+}
+
+.card,
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.144);
+  border-radius: 15px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.205),
+    inset 0 20px 20px rgba(253, 253, 253, 0.205);
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.336);
+  position: relative;
+  transition: box-shadow 0.4s, color 0.8s, transform 0.4s;
+}
+
+.card:hover,
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover {
+  transform: translateY(-10px);
+}
+
+.teg_a {
+  color: #2c2c2b;
+}
+
+@media screen and (max-width: 950px) {
+  .second {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .second {
+    display: none;
+  }
+  .text_min {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .icon {
+    height: 15vh;
+  }
+
+  .second {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 495px) {
+  .icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .second {
+    font-size: 3vw;
+  }
+  .footer {
+    height: 18vh;
+  }
+}

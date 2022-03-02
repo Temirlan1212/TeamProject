@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import AuthContextProvider from "./contexts/AuthContext";
 import ProductContextProvider from "./contexts/ProductContext";
 import MainRoutes from "./MainRoutes";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <ProductContextProvider>
             <Navbar />
             <MainRoutes />
+            <Footer />
           </ProductContextProvider>
         </AuthContextProvider>
       </BrowserRouter>

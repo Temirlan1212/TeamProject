@@ -38,7 +38,7 @@ export default function MediaCard({ item }) {
         image={item.picture}
         sx={{ opacity: "90%" }}
       />
-      <CardContent>
+      <CardContent sx={{ background: "#ccff90" }}>
         <Typography gutterBottom variant="h4" component="div" color="#616161">
           {item.name}
         </Typography>

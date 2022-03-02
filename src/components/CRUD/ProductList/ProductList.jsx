@@ -41,7 +41,11 @@ const ProductList = ({ products }) => {
   return (
     <div
       style={{
-        backgroundColor: "white",
+        backgroundImage:
+          "url(https://www.wallpapers4u.org/wp-content/uploads/children_boy_brother_beach_sand_reflection_coast_sea_ocean_surf_walk_shorts_heels_horizon_sky_53900_1920x1080.jpg)",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
       }}
     >
       <div
