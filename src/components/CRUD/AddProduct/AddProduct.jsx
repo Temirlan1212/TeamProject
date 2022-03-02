@@ -89,7 +89,7 @@ const AddProduct = () => {
             label="TYPE"
             variant="outlined"
             name="type"
-            onChange={handleInp}  
+            onChange={handleInp}
           />
           <Stack direction="row" spacing={2} sx={{ bgcolor: "#880e4f" }}>
             <Button

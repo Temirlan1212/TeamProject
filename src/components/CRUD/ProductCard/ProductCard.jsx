@@ -11,6 +11,7 @@ import { useAuth } from "../../../contexts/AuthContext";
 import { ADMIN } from "../../../helpers/consts";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { IconButton } from "@mui/material";
+import classes from "../ProductCard/ProductCard.module.css";
 
 export default function MediaCard({ item }) {
   const { deleteProduct, addProductToCart, checkProductInCart } = useProducts();
@@ -21,30 +22,55 @@ export default function MediaCard({ item }) {
   const navigate = useNavigate();
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia component="img" height="140" alt="green iguana" />
+    <Card
+      sx={{
+        maxWidth: 340,
+        marginTop: 5,
+        boxShadow: "none",
+        background: "rgba(255, 255, 255, 0.1)",
+      }}
+    >
+      <CardMedia
+        onClick={() => navigate(`/products/${item.id}`)}
+        className={classes.CardMedia}
+        component="img"
+        height="250px"
+        image={item.picture}
+        sx={{ opacity: "90%" }}
+      />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h4" component="div" color="#616161">
           {item.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {item.description}
+        <Typography variant="h6" color="#616161">
+          {item.descritption}
+        </Typography>
+        <Typography variant="h6" color="#616161">
+          {item.phone}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions sx={{ display: "flex", justifyContent: "center" }}>
         {email === ADMIN ? (
           <>
             {" "}
-            <Button size="small" onClick={() => deleteProduct(item.id)}>
+            <Button
+              size="small"
+              onClick={() => deleteProduct(item.id)}
+              variant="h6"
+              color="#616161"
+              sx={{ fontWeight: 900, color: "#616161" }}
+            >
               DELETE
             </Button>
-            <Button size="small" onClick={() => navigate(`/edit/${item.id}`)}>
+            <Button
+              size="small"
+              onClick={() => navigate(`/edit/${item.id}`)}
+              sx={{ fontWeight: 900, color: "#616161" }}
+            >
               EDIT
             </Button>
           </>
         ) : null}
-
-        <span onClick={() => navigate(`/products/${item.id}`)}>more...</span>
       </CardActions>
     </Card>
   );

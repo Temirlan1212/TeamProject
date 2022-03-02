@@ -10,11 +10,11 @@ const ScrollHandler = (props) => {
 
   return React.cloneElement(props.children, {
     style: {
-      backgroundColor: trigger ? "rgba(255, 255, 255, 0.75)" : "transparent",
+      backgroundColor: trigger ? "rgba(255, 184, 206)" : "transparent",
       color: trigger ? "white" : "black",
       transition: trigger ? "0.3s" : "0.5s",
       boxShadow: "none",
-      padding: "10px 0px",
+      padding: "",
     },
   });
 };
