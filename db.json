@@ -1,12 +1,12 @@
 {
   "products": [
     {
-      "name": "sndfjknsdfnm,nm,n",
-      "description": "lj",
-      "price": null,
-      "picture": "jlkjdflkjlk;jq",
-      "type": "lkjflkjc",
-      "id": 1
+      "name": "jecket",
+      "description": "for winter",
+      "price": 321,
+      "picture": "https://www.hummel.net/on/demandware.static/-/Sites-hummel-master-catalog/default/dwc82c2302/images/packshot/206695-3062.png",
+      "type": "jackets",
+      "id": 5
     }
   ]
 }

@@ -6,3 +6,51 @@
 a {
   text-decoration: none;
 }
+
+.MuiMobileStepper-dot {
+  width: 20px !important;
+  height: 5px !important;
+  border-radius: 0% !important;
+}
+.css-k008qs {
+  background-color: rgba(255, 184, 206);
+  overflow-x: hidden;
+}
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+  background: transparent !important;
+}
+.MuiDrawer-docked {
+  background-color: rgba(255, 184, 206) !important;
+}
+
+.css-17pr1ty-MuiFormGroup-root {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+
+.css-17pr1ty-MuiFormGroup-root {
+  display: flex;
+}
+
+.contact-list-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+}
+.add-contact-right-img {
+  max-width: 300px;
+  max-height: 300px;
+  position: absolute;
+  top: 100px;
+  left: 130px;
+}
+
+.add-contact-left-img {
+  max-width: 300px;
+  max-height: 230px;
+  position: absolute;
+  top: 100px;
+  right: 130px;
+}
