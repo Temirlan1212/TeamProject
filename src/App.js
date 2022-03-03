@@ -4,6 +4,7 @@ import AuthContextProvider from "./contexts/AuthContext";
 import ProductContextProvider from "./contexts/ProductContext";
 import MainRoutes from "./MainRoutes";
 import Footer from "./components/Footer/Footer";
+import Footer2 from "./components/Footer2/Footer2";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
           <ProductContextProvider>
             <Navbar />
             <MainRoutes />
-            <Footer />
+            {/* <Footer /> */}
+            <Footer2 />
           </ProductContextProvider>
         </AuthContextProvider>
       </BrowserRouter>

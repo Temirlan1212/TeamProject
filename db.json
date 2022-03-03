@@ -1,12 +1,68 @@
 {
   "products": [
     {
-      "name": "jecket",
-      "description": "for winter",
-      "price": 321,
-      "picture": "https://www.hummel.net/on/demandware.static/-/Sites-hummel-master-catalog/default/dwc82c2302/images/packshot/206695-3062.png",
+      "name": "КУРТКА",
+      "description": "КУРТКА ДЛЯ ЗИМЫ",
+      "price": 1230,
+      "picture": "https://m.media-amazon.com/images/I/61NXvEvaVNL._AC_UX342_.jpg",
+      "type": "jackets",
+      "id": 1
+    },
+    {
+      "name": "КУРТКА ",
+      "description": "зимняя ",
+      "price": 4000,
+      "picture": "https://n.nordstrommedia.com/id/sr3/81bbfd05-9835-456f-82e8-7773ed689594.jpeg?h=365&w=240&dpr=2",
+      "type": "jackets",
+      "id": 2
+    },
+    {
+      "name": "КУРТКА",
+      "description": "осенняя",
+      "price": 3000,
+      "picture": "https://5.imimg.com/data5/SELLER/Default/2021/4/VD/UD/AO/21288657/cn-jackets-21-c-500x500.png",
+      "type": "jackets",
+      "id": 3
+    },
+    {
+      "name": "КУРТКА",
+      "description": "осень",
+      "price": 4500,
+      "picture": "https://n.nordstrommedia.com/id/sr3/f69b2171-d8c7-42d5-9d90-8b9230f2596c.jpeg?h=365&w=240&dpr=2",
+      "type": "jackets",
+      "id": 4
+    },
+    {
+      "name": "GHEAD",
+      "description": "зима",
+      "price": 4999,
+      "picture": "https://m.media-amazon.com/images/I/611wNxU1isL._UL1024_.jpg",
       "type": "jackets",
       "id": 5
+    },
+    {
+      "name": "DOLLC",
+      "description": "осень",
+      "price": 3800,
+      "picture": "https://images.jdmagicbox.com/quickquotes/images_main/b0813l8fff-infant-baby-boys-jacket-2019-autumn-winter-jacket-for-baby-coat-kids-boy-warm-fur-outerwear-coat-for-baby-jacket-newborn-clothes-180853766-ii82f.jpg",
+      "type": "jackets",
+      "id": 6
+    },
+    {
+      "name": "DELCHI",
+      "description": "осень",
+      "price": 1200,
+      "picture": "https://4.imimg.com/data4/SL/LT/GLADMIN-180724/baby-boy-jacket-500x500.jpg",
+      "type": "jackets",
+      "id": 7
+    },
+    {
+      "name": "ARMON",
+      "description": "весна",
+      "price": 6000,
+      "picture": "https://m.media-amazon.com/images/I/61VTlhSIOBL._UX569_.jpg",
+      "type": "jackets",
+      "id": 8
     }
   ]
 }

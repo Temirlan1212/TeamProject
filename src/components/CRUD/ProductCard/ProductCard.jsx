@@ -24,10 +24,11 @@ export default function MediaCard({ item }) {
   return (
     <Card
       sx={{
-        maxWidth: 340,
+        maxWidth: 400,
         marginTop: 5,
         boxShadow: "none",
-        background: "rgba(255, 255, 255, 0.1)",
+        background: "rgba(255, 255, 255, 0.9)",
+        border: "1px solid #616161",
       }}
     >
       <CardMedia
@@ -36,14 +37,14 @@ export default function MediaCard({ item }) {
         component="img"
         height="250px"
         image={item.picture}
-        sx={{ opacity: "90%" }}
+        sx={{ opacity: "90%", width: "250px" }}
       />
-      <CardContent sx={{ background: "#ccff90" }}>
+      <CardContent sx={{ background: "" }}>
         <Typography gutterBottom variant="h4" component="div" color="#616161">
           {item.name}
         </Typography>
         <Typography variant="h6" color="#616161">
-          {item.descritption}
+          {item.description}
         </Typography>
         <Typography variant="h6" color="#616161">
           {item.phone}
@@ -70,7 +71,13 @@ export default function MediaCard({ item }) {
               EDIT
             </Button>
           </>
-        ) : null}
+        ) : (
+          <IconButton onClick={() => addProductToCart(item)}>
+            <ShoppingCartIcon
+              color={checkProductInCart(item.id) ? "secondary" : ""}
+            />
+          </IconButton>
+        )}
       </CardActions>
     </Card>
   );
