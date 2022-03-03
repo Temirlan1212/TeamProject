@@ -8,3 +8,18 @@
   font-weight: 600 !important;
   font-size: 3vh !important;
 }
+
+.navbarImg {
+}
+@media (max-width: 880px) {
+  .navbarImg {
+    width: 250px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbarImg {
+    width: 200px !important;
+    height: 30px !important;
+  }
+}

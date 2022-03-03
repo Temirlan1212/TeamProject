@@ -116,10 +116,10 @@ export default function MiniDrawer() {
   };
 
   const pages = [
-    { name: "PRODUCTS", link: "/products", id: 1 },
-    { name: "ABOUT US", link: "/aboutus", id: 2 },
-    { name: "CONTACTS", link: "/contacts", id: 3 },
-    { name: "HOME", link: "/", id: 4 },
+    { name: "ТОВАРЫ", link: "/products", id: 1 },
+    { name: "О НАС", link: "/aboutus", id: 2 },
+    { name: "КОНТАКТЫ", link: "/contacts", id: 3 },
+    { name: "ДОМ", link: "/", id: 4 },
   ];
 
   const images = [
@@ -150,9 +150,12 @@ export default function MiniDrawer() {
         <AppBar position="fixed" open={open}>
           <center>
             <img
+              className={classes.navbarImg}
               src={logo}
               style={{
-                height: "50px",
+                marginLeft: "30px",
+                marginTop: "5px",
+                height: "40px",
                 width: "300px",
               }}
             />
@@ -209,15 +212,6 @@ export default function MiniDrawer() {
                     </Link>
                   </MenuItem>
                 ))}
-                {/* ADMIN PANEL */}
-                {email == ADMIN ? (
-                  <MenuItem>
-                    <Link to="/admin">
-                      <Typography textAlign="center">ADMIN PANNEL</Typography>
-                    </Link>
-                  </MenuItem>
-                ) : null}
-                {/* ADMIN PANEL */}
               </Menu>
             </Box>
 
@@ -230,14 +224,12 @@ export default function MiniDrawer() {
               {pages.map((page) => (
                 <Link to={page.link}>
                   <Button
-                    className={classes.Button}
                     key={page.id}
                     onClick={handleCloseNavMenu}
                     sx={{
-                      my: 2,
-                      color: "#ff9100",
+                      color: "brown",
                       display: "block",
-                      fontSize: 12,
+                      fontSize: 24,
                       fontFamily: "Monospace",
                     }}
                   >
@@ -347,7 +339,7 @@ export default function MiniDrawer() {
             <Button>
               <IconButton sx={{ color: "white" }}>
                 <Badge color="secondary">
-                  <ShoppingCartIcon />
+                  <ShoppingCartIcon sx={{ color: "black" }} />
                 </Badge>
               </IconButton>
             </Button>

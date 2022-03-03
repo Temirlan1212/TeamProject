@@ -42,7 +42,14 @@ function Hero() {
   };
 
   return (
-    <Box sx={{ maxWidth: "100vw", maxHeight: "200vh" }}>
+    <Box
+      sx={{
+        maxWidth: "100vw",
+        maxHeight: "200vh",
+        marginTop: { sm: "470px", xs: "480px" },
+      }}
+      className={classes.Box1}
+    >
       <AutoPlaySwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={activeStep}
@@ -55,7 +62,7 @@ function Hero() {
               <Box
                 component="img"
                 sx={{
-                  maxHeight: "1100px",
+                  maxHeight: "1400px",
                   display: "block",
                   maxWidth: "100vw",
                   overflow: "hidden",
@@ -64,12 +71,12 @@ function Hero() {
                 src={step.imgPath}
               />
             ) : null}
-            <Button
+            {/* <Button
               sx={{ display: "flex", margin: "0 auto", marginTop: "5px" }}
               variant="outlined"
             >
               Click Here to see the TOP
-            </Button>
+            </Button> */}
           </div>
         ))}
       </AutoPlaySwipeableViews>
