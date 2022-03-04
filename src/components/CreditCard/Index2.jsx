@@ -72,90 +72,94 @@ export default class App extends React.Component {
     const { name, number, expiry, cvc, focused, issuer, formData } = this.state;
 
     return (
-      <Box
-        className="App-payment"
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          maxWidth: "500px",
-          border: "1px solid grey",
-          maxHeight: "500px",
-          margin: "auto 0",
-        }}
-      >
-        <Card
-          number={number}
-          name={name}
-          expiry={expiry}
-          cvc={cvc}
-          focused={focused}
-          callback={this.handleCallback}
-        />
-        <FormControl ref={(c) => (this.form = c)} onSubmit={this.handleSubmit}>
-          <Input
-            type="tel"
-            name="number"
-            className="form-control"
-            placeholder="Card Number"
-            pattern="[\d| ]{16,22}"
-            required
-            variant="standard"
-            onChange={this.handleInputChange}
-            onFocus={this.handleInputFocus}
+      <center>
+        <Box
+          className="App-payment"
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            maxWidth: "500px",
+            border: "1px solid grey",
+            maxHeight: "500px",
+            margin: "auto 0",
+          }}
+        >
+          <Card
+            number={number}
+            name={name}
+            expiry={expiry}
+            cvc={cvc}
+            focused={focused}
+            callback={this.handleCallback}
           />
+          <FormControl
+            ref={(c) => (this.form = c)}
+            onSubmit={this.handleSubmit}
+          >
+            <Input
+              type="tel"
+              name="number"
+              className="form-control"
+              placeholder="Card Number"
+              pattern="[\d| ]{16,22}"
+              required
+              variant="standard"
+              onChange={this.handleInputChange}
+              onFocus={this.handleInputFocus}
+            />
 
-          <TextField
-            type="text"
-            name="name"
-            className="form-control"
-            placeholder="Name"
-            required
-            variant="standard"
-            onChange={this.handleInputChange}
-            onFocus={this.handleInputFocus}
-          />
+            <TextField
+              type="text"
+              name="name"
+              className="form-control"
+              placeholder="Name"
+              required
+              variant="standard"
+              onChange={this.handleInputChange}
+              onFocus={this.handleInputFocus}
+            />
 
-          <TextField
-            type="tel"
-            name="expiry"
-            className="form-control"
-            placeholder="Valid Thru"
-            pattern="\d\d/\d\d"
-            required
-            variant="standard"
-            onChange={this.handleInputChange}
-            onFocus={this.handleInputFocus}
-          />
+            <TextField
+              type="tel"
+              name="expiry"
+              className="form-control"
+              placeholder="Valid Thru"
+              pattern="\d\d/\d\d"
+              required
+              variant="standard"
+              onChange={this.handleInputChange}
+              onFocus={this.handleInputFocus}
+            />
 
-          <TextField
-            type="tel"
-            name="cvc"
-            className="form-control"
-            placeholder="CVC"
-            pattern="\d{3,4}"
-            required
-            variant="standard"
-            onChange={this.handleInputChange}
-            onFocus={this.handleInputFocus}
-          />
+            <TextField
+              type="tel"
+              name="cvc"
+              className="form-control"
+              placeholder="CVC"
+              pattern="\d{3,4}"
+              required
+              variant="standard"
+              onChange={this.handleInputChange}
+              onFocus={this.handleInputFocus}
+            />
 
-          <input type="hidden" name="issuer" value={issuer} />
+            <input type="hidden" name="issuer" value={issuer} />
 
-          <Button variant="outlined" className="btn btn-primary btn-block">
-            PAY
-          </Button>
-        </FormControl>
-        {formData && (
-          <div className="App-highlight">
-            {formatFormData(formData).map((d, i) => (
-              <div key={i}>{d}</div>
-            ))}
-          </div>
-        )}
+            <Button variant="outlined" className="btn btn-primary btn-block">
+              PAY
+            </Button>
+          </FormControl>
+          {formData && (
+            <div className="App-highlight">
+              {formatFormData(formData).map((d, i) => (
+                <div key={i}>{d}</div>
+              ))}
+            </div>
+          )}
 
-        <hr style={{ margin: "60px 0 30px" }} />
-        <div className="App-badges">
-          {/* <a
+          <hr style={{ margin: "60px 0 30px" }} />
+          <div className="App-badges">
+            {/* <a
               href="https://github.com/amarofashion/react-credit-cards"
               className="github__btn"
             >
@@ -165,8 +169,9 @@ export default class App extends React.Component {
               />
               <span>View on GitHub</span>
             </a> */}
-        </div>
-      </Box>
+          </div>
+        </Box>
+      </center>
     );
   }
 }

@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import { Button } from "@mui/material";
 
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
+import { Link } from "react-router-dom";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -47,6 +48,7 @@ const rows = [
 
 export default function Cart() {
   const [count, setCount] = React.useState();
+  const { products } = useProducts();
 
   const { cart, getCart, changeProductCount, deleteCartProducts } =
     useProducts();
@@ -62,7 +64,7 @@ export default function Cart() {
 
   const handleCountChange = (count, id) => {
     if (count <= 0 || count >= 1000) {
-      count = 1;
+      count = 2;
       changeProductCount(count, id);
     } else {
       changeProductCount(count, id);
@@ -75,7 +77,7 @@ export default function Cart() {
         sx={{ maxWidth: { md: "100vw", sm: "20px" } }}
         aria-label="customized table"
       >
-        {/* <TableHead>
+        <TableHead>
           <TableRow>
             <StyledTableCell>Picture</StyledTableCell>
             <StyledTableCell align="right">Name</StyledTableCell>
@@ -86,7 +88,7 @@ export default function Cart() {
             <StyledTableCell align="right">Subprice</StyledTableCell>
             <StyledTableCell align="right">-</StyledTableCell>
           </TableRow>
-        </TableHead> */}
+        </TableHead>
         <TableBody>
           {cart.products.map((row) => (
             <StyledTableRow key={row.name}>
@@ -119,13 +121,17 @@ export default function Cart() {
                 <Button onClick={() => deleteCartProducts(row.item.id)}>
                   <DeleteOutlineIcon />
                 </Button>
+
+                <Link to="/credit">
+                  <Button onClick={cartcleaner}>
+                    BUY NOW FOR {cart.totalPricde}$
+                  </Button>
+                </Link>
               </StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>
       </Table>
-
-      {/* <Button onClick={cartcleaner}>BUY NOW FOR {cart.totalPricde}$</Button> */}
     </TableContainer>
   );
 }

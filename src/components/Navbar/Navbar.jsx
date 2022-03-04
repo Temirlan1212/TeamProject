@@ -321,7 +321,7 @@ export default function MiniDrawer() {
               variant="outlined"
               color="error"
               sx={{ my: 2, display: "block", border: "none" }}
-              onClick={handleLogout}
+              // onClick={handleLogout}
             >
               <List>
                 {["ТОВАРЫ"].map((text, index) => (
@@ -342,7 +342,7 @@ export default function MiniDrawer() {
               variant="outlined"
               color="error"
               sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
-              onClick={handleLogout}
+              // onClick={handleLogout}
             >
               <List>
                 {["Контакты"].map((text, index) => (
@@ -364,7 +364,7 @@ export default function MiniDrawer() {
             variant="outlined"
             color="error"
             sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
-            onClick={handleLogout}
+            // onClick={handleLogout}
           >
             <List>
               {["О нас"].map((text, index) => (
@@ -385,7 +385,7 @@ export default function MiniDrawer() {
             variant="outlined"
             color="error"
             sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
-            onClick={handleLogout}
+            // onClick={handleLogout}
           >
             <List>
               {["Карта"].map((text, index) => (
@@ -400,7 +400,28 @@ export default function MiniDrawer() {
           </Box>
         </Link>
 
-        {email ? null : (
+        {email ? (
+          <Link to="/auth">
+            <Box
+              id="button"
+              variant="outlined"
+              color="error"
+              sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
+              onClick={handleLogout}
+            >
+              <List>
+                {["Log in"].map((text, index) => (
+                  <ListItem button key={text}>
+                    <ListItemIcon>
+                      <LoginIcon sx={{ color: "brown" }} />
+                    </ListItemIcon>
+                    <ListItemText primary={text} />
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+          </Link>
+        ) : (
           <Link to="/auth">
             <Box
               id="button"
