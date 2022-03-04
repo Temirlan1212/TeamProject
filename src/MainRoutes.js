@@ -12,6 +12,7 @@ import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
 import ProductsPage from "./pages/ProductsPage";
+import Map from "../src/components/Map";
 
 const MainRoutes = () => {
   const { user } = useAuth();
@@ -54,6 +55,11 @@ const MainRoutes = () => {
     {
       link: "*",
       element: <NotFoundPage />,
+      id: 8,
+    },
+    {
+      link: "/map",
+      element: <Map />,
       id: 8,
     },
   ];

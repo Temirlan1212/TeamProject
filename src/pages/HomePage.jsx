@@ -13,7 +13,7 @@ const HomePage = () => {
     <div>
       <Home />
       <Hero />
-      <center style={{ padding: "35vh 0 20vh 0" }}>
+      <center style={{ padding: "35vh 0 20vh 0" }} className="HomePage_center">
         <Slider1 />
       </center>
       <Hero2 />

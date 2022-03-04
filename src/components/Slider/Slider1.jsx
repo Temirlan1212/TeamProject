@@ -21,8 +21,10 @@ function Slider1() {
     <Box
       sx={{
         maxWidth: { lg: "1100px", sm: "700px" },
-        margin: "30px 0",
+        padding: "30px 0",
         display: { sm: "none", lg: "block", md: "block" },
+        backgroundColor: "beige",
+        border: "2px solid grey",
       }}
     >
       <h1 style={{ color: "#616161" }}>Большой выбор</h1>
@@ -48,6 +50,7 @@ function Slider1() {
               color: "#fff",
               margin: "60px",
               fontSize: "4em",
+              border: "2px solid grey",
               transition:
                 midItemIndex === idx
                   ? "transform 700ms ease"

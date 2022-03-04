@@ -4,7 +4,7 @@ import video2 from "../../assets/video2.mp4";
 
 const Home = () => {
   return (
-    <div sx={{ marginLeft: "100px" }}>
+    <div sx={{ marginLeft: "100px", position: "relative", width: "100%" }}>
       <div>
         <video
           autoPlay
@@ -22,6 +22,10 @@ const Home = () => {
           }}
           src={video2}
         ></video>
+
+        {/* <video autoPlay muted loop>
+          <source src={video2} style={{ width: "100%" }}></source>
+        </video> */}
       </div>
     </div>
   );
