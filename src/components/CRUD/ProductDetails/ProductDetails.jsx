@@ -12,6 +12,9 @@ import Typography from "@mui/material/Typography";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
+import CreditCard1 from "../../CreditCard/Cards";
+import Index2 from "../../CreditCard/Index2";
+import Cards from "../../CreditCard/Cards";
 
 const ProductDetails = () => {
   const theme = useTheme();
@@ -26,109 +29,37 @@ const ProductDetails = () => {
   }, [id]);
 
   return (
-    // <div
-    //   className="details-wrap"
-    //   style={{ display: "flex", justifyContent: "space-evenly" }}
-    // >
-    //   <div>
-    //     <img id="details-img" src={productDetails.picture} alt="" />
-    //   </div>
-
-    //   <div className="details-list">
-    //     <h2 className="title">{productDetails.name}</h2>
-    //     <h3 className="type">{productDetails.type}</h3>
-    //     <h4 className="price">{productDetails.price}</h4>
-    //     <h5 className="descr">{productDetails.description}</h5>
-    //   </div>
-    // </div>
-
-    <Card
-      sx={{
+    <div
+      style={{
         display: "flex",
+        flexWrap: "wrap-reverse",
+        justifyContent: "space-around",
+        padding: "50px",
         justifyContent: "center",
-
-        height: "600px",
-        alignItems: "center",
+        backgroundColor: "#E2EAEC",
       }}
     >
-      <CardMedia
-        component="img"
-        sx={{ width: 400, border: "1px solid #616161", height: "500px" }}
-        image={productDetails.picture}
-        alt="Live from space album cover"
-      />
+      <Card sx={{ margin: "auto 0", maxHeight: "500px" }}>
+        <CardMedia
+          component="img"
+          sx={{ width: 400, border: "1px solid #616161", height: "500px" }}
+          image={productDetails.picture}
+          alt="Live from space album cover"
+        />
 
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          margin: 10,
-        }}
-      >
-        <CardContent
+        <Box
           sx={{
-            flex: "1 0 auto",
             display: "flex",
-            justifyContent: "center",
             flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: 10,
           }}
-        >
-          <Typography
-            component="div"
-            variant="h5"
-            sx={{
-              fontWeight: "800",
-              fontSize: "40px",
-              color: "#616161",
-              my: "20px",
-            }}
-          >
-            Order
-          </Typography>
-
-          <Typography
-            component="div"
-            variant="h5"
-            sx={{
-              fontWeight: "800",
-              fontSize: "40px",
-              color: "#616161",
-              my: "20px",
-            }}
-            onClick={() => setPo(po * 2)}
-          >
-            {po}
-          </Typography>
-
-          <Typography
-            component="div"
-            variant="h5"
-            sx={{
-              fontWeight: "800",
-              fontSize: "40px",
-              color: "#616161",
-              my: "20px",
-            }}
-          >
-            {productDetails.description}
-          </Typography>
-
-          <Typography
-            variant="subtitle1"
-            component="div"
-            sx={{
-              fontWeight: "800",
-              fontSize: "40px",
-              color: "#616161",
-              my: "20px",
-            }}
-          >
-            {productDetails.type}
-          </Typography>
-        </CardContent>
-      </Box>
-    </Card>
+        ></Box>
+      </Card>
+      <Cards />
+      <Index2 />
+    </div>
   );
 };
 

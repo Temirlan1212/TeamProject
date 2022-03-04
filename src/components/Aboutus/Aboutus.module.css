@@ -6,7 +6,7 @@
 .partFirst {
   display: flex;
   justify-content: center;
-  background-color: rgb(252, 185, 197);
+  background-color: rgb(126, 140, 247);
   text-align: center;
   align-items: center;
   justify-content: space-between;
@@ -76,7 +76,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 0 40px;
+  /* padding: 0 40px; */
   background-color: rgb(156, 80, 226);
   color: white;
   font-size: 3vh;

@@ -45,6 +45,7 @@ const ProductsPage = () => {
         nextLinkClassName="nextBtn"
         activeClassName="activeBtn"
         disabledClassName="disabledBtn"
+        variant="outlined"
       />
     </center>
   );

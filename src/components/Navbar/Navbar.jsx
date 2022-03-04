@@ -35,6 +35,13 @@ import logo from "../../assets/logo1.png";
 import LoginIcon from "@mui/icons-material/Login";
 import LogoutIcon from "@mui/icons-material/Logout";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
+import { useProducts } from "../../contexts/ProductContext";
+
+import CheckroomIcon from "@mui/icons-material/Checkroom";
+import CallIcon from "@mui/icons-material/Call";
+import BusinessIcon from "@mui/icons-material/Business";
+
+import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 
 const drawerWidth = 240;
 
@@ -106,6 +113,7 @@ const Drawer = styled(MuiDrawer, {
 export default function MiniDrawer() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const { cart } = useProducts();
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -149,16 +157,18 @@ export default function MiniDrawer() {
       <ScrollToColor01>
         <AppBar position="fixed" open={open}>
           <center>
-            <img
-              className={classes.navbarImg}
-              src={logo}
-              style={{
-                marginLeft: "30px",
-                marginTop: "5px",
-                height: "40px",
-                width: "300px",
-              }}
-            />
+            <Link to="/">
+              <img
+                className={classes.navbarImg}
+                src={logo}
+                style={{
+                  marginLeft: "30px",
+                  marginTop: "5px",
+                  height: "40px",
+                  width: "300px",
+                }}
+              />
+            </Link>
           </center>
           <Toolbar>
             <IconButton
@@ -221,7 +231,7 @@ export default function MiniDrawer() {
                 display: { xs: "none", md: "flex", justifyContent: "center" },
               }}
             >
-              {pages.map((page) => (
+              {/* {pages.map((page) => (
                 <Link to={page.link}>
                   <Button
                     key={page.id}
@@ -236,7 +246,7 @@ export default function MiniDrawer() {
                     {page.name}
                   </Button>
                 </Link>
-              ))}
+              ))} */}
             </Box>
 
             {/* <TextField
@@ -261,55 +271,6 @@ export default function MiniDrawer() {
           </IconButton>
         </DrawerHeader>
         <Divider sx={{ marginTop: "49px" }} />
-
-        <Box sx={{ flexGrow: 0, marginTop: "100px" }}>
-          {email ? (
-            <Box
-              id="button"
-              variant="outlined"
-              color="error"
-              sx={{ my: 2, display: "block", border: "none" }}
-              onClick={handleLogout}
-            >
-              <List>
-                {["Log out"].map((text, index) => (
-                  <ListItem button key={text}>
-                    <ListItemIcon>
-                      <LogoutIcon />
-                    </ListItemIcon>
-                    <ListItemText primary={text} />
-                  </ListItem>
-                ))}
-              </List>
-            </Box>
-          ) : null}
-
-          {email ? null : (
-            <Link to="/auth">
-              <Box
-                id="button"
-                variant="outlined"
-                color="error"
-                sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
-                onClick={handleLogout}
-              >
-                <List>
-                  {["Log in"].map((text, index) => (
-                    <ListItem button key={text}>
-                      <ListItemIcon>
-                        <LoginIcon />
-                      </ListItemIcon>
-                      <ListItemText primary={text} />
-                    </ListItem>
-                  ))}
-                </List>
-              </Box>
-            </Link>
-          )}
-        </Box>
-
-        <Divider />
-
         {/* ADMIN PANEL */}
         {email == ADMIN ? (
           <Link to="/admin">
@@ -336,13 +297,129 @@ export default function MiniDrawer() {
           </Link>
         ) : (
           <Link to="/cart">
-            <Button>
-              <IconButton sx={{ color: "white" }}>
-                <Badge color="secondary">
-                  <ShoppingCartIcon sx={{ color: "black" }} />
-                </Badge>
-              </IconButton>
-            </Button>
+            <List>
+              {["Cart"].map((text, index) => (
+                <ListItem button key={text}>
+                  <IconButton sx={{ color: "brown" }}>
+                    <Badge
+                      badgeContent={cart?.products ? cart.products.length : 0}
+                      color="secondary"
+                    >
+                      <ShoppingCartIcon />
+                    </Badge>
+                  </IconButton>
+                </ListItem>
+              ))}
+            </List>
+          </Link>
+        )}
+        <Divider />
+        <Box sx={{ flexGrow: 0 }}>
+          <Link to="/products">
+            <Box
+              id="button"
+              variant="outlined"
+              color="error"
+              sx={{ my: 2, display: "block", border: "none" }}
+              onClick={handleLogout}
+            >
+              <List>
+                {["ТОВАРЫ"].map((text, index) => (
+                  <ListItem button key={text}>
+                    <ListItemIcon>
+                      <CheckroomIcon sx={{ color: "brown" }} />
+                    </ListItemIcon>
+                    <ListItemText primary={text} />
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+          </Link>
+
+          <Link to="/contacts">
+            <Box
+              id="button"
+              variant="outlined"
+              color="error"
+              sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
+              onClick={handleLogout}
+            >
+              <List>
+                {["Контакты"].map((text, index) => (
+                  <ListItem button key={text}>
+                    <ListItemIcon>
+                      <CallIcon sx={{ color: "brown" }} />
+                    </ListItemIcon>
+                    <ListItemText primary={text} />
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+          </Link>
+        </Box>
+
+        <Link to="/aboutus">
+          <Box
+            id="button"
+            variant="outlined"
+            color="error"
+            sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
+            onClick={handleLogout}
+          >
+            <List>
+              {["О нас"].map((text, index) => (
+                <ListItem button key={text}>
+                  <ListItemIcon>
+                    <BusinessIcon sx={{ color: "brown" }} />
+                  </ListItemIcon>
+                  <ListItemText primary={text} />
+                </ListItem>
+              ))}
+            </List>
+          </Box>
+        </Link>
+
+        <Link to="/map">
+          <Box
+            id="button"
+            variant="outlined"
+            color="error"
+            sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
+            onClick={handleLogout}
+          >
+            <List>
+              {["Карта"].map((text, index) => (
+                <ListItem button key={text}>
+                  <ListItemIcon>
+                    <AddLocationAltIcon sx={{ color: "brown" }} />
+                  </ListItemIcon>
+                  <ListItemText primary={text} />
+                </ListItem>
+              ))}
+            </List>
+          </Box>
+        </Link>
+
+        {email ? null : (
+          <Link to="/auth">
+            <Box
+              id="button"
+              variant="outlined"
+              color="error"
+              sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
+              onClick={handleLogout}
+            >
+              <List>
+                {["Log in"].map((text, index) => (
+                  <ListItem button key={text}>
+                    <ListItemIcon>
+                      <LoginIcon sx={{ color: "brown" }} />
+                    </ListItemIcon>
+                    <ListItemText primary={text} />
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
           </Link>
         )}
         {/* ADMIN PANEL */}

@@ -7,6 +7,8 @@
   height: 50px;
   list-style-type: none;
   color: rgb(250, 143, 177);
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .pagination a {
@@ -25,4 +27,10 @@
 .activeBtn a {
   background-color: rgba(255, 184, 206);
   color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .HomePage_center {
+    display: none;
+  }
 }
