@@ -13,6 +13,9 @@ import NotFoundPage from "./pages/NotFoundPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
 import ProductsPage from "./pages/ProductsPage";
 import Map from "../src/components/Map";
+import { CreditCard } from "@material-ui/icons";
+
+import Index2 from "../src/components/CreditCard/Index2";
 
 const MainRoutes = () => {
   const { user } = useAuth();
@@ -61,6 +64,10 @@ const MainRoutes = () => {
       link: "/map",
       element: <Map />,
       id: 8,
+    },
+    {
+      link: "/credit",
+      element: <Index2 />,
     },
   ];
 

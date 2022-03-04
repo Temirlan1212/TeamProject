@@ -15,6 +15,8 @@ const AuthContextProvider = ({ children }) => {
   const [passwordError, setPasswordError] = useState("");
   const [hasAccount, setHasAccount] = useState("");
 
+  console.log(email, "email in context");
+
   const clearInputs = () => {
     setEmail("");
     setPassword("");

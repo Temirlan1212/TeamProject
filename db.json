@@ -95,6 +95,14 @@
       "picture": "https://emelin-spb.ru/wp-content/uploads/1fa1f4c9911755110236c391a85b0ebb.png",
       "type": "hats",
       "id": 13
+    },
+    {
+      "name": "sdfds",
+      "description": "sdfs",
+      "price": null,
+      "picture": "qsdfsd",
+      "type": "sdf",
+      "id": 14
     }
   ]
 }
