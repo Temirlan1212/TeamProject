@@ -63,6 +63,38 @@
       "picture": "https://m.media-amazon.com/images/I/61VTlhSIOBL._UX569_.jpg",
       "type": "jackets",
       "id": 8
+    },
+    {
+      "name": "H-pd",
+      "description": "зима",
+      "price": 1200,
+      "picture": "https://kids-mall.ru/upload/resize_cache/iblock/422/250_250_2/42279a951be843db52fb107eb33f6fca.png",
+      "type": "hats",
+      "id": 9
+    },
+    {
+      "name": "adidas",
+      "description": "зима",
+      "price": 4000,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7Vc7LccbXcVV5t-5zFwcPyVio2oi8zJdOj7tdWqYlCO1znQAqFKMs1fozTVRQs_7Ja8&usqp=CAU",
+      "type": "hats",
+      "id": 10
+    },
+    {
+      "name": "nike",
+      "description": "зима",
+      "price": 4000,
+      "picture": "https://aliradar.com/api/image?url=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FH14dec2fb4e2b491f95bd5d77f8aa8c5ba.jpg_480x480.jpg_Q80.jpg_.webp",
+      "type": "hats",
+      "id": 11
+    },
+    {
+      "name": "nike",
+      "description": "лето",
+      "price": 6000,
+      "picture": "https://emelin-spb.ru/wp-content/uploads/1fa1f4c9911755110236c391a85b0ebb.png",
+      "type": "hats",
+      "id": 13
     }
   ]
 }

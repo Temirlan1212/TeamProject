@@ -48,7 +48,8 @@ const Hero2 = () => {
   return (
     <div
       style={{
-        backgroundColor: "#cfa972",
+        backgroundImage:
+          "url(https://idei.club/uploads/posts/2021-10/1634828727_7-idei-club-p-butik-detskoi-obuvi-interer-krasivo-foto-7.jpg)",
         padding: "100px",
         marginTop: "20px",
       }}
@@ -74,7 +75,9 @@ const Hero2 = () => {
           }}
         >
           <CardContent>
-            <Typography>SHOP BABY</Typography>
+            <Typography sx={{ color: "white", fontWeight: "bold" }}>
+              Для девочек
+            </Typography>
           </CardContent>
           <CardActionArea>
             <CardMedia
@@ -109,12 +112,13 @@ const Hero2 = () => {
             />
           </CardActionArea>
           <CardContent>
-            <Typography>SHOP BABY</Typography>
+            <Typography sx={{ color: "white", fontWeight: "bold" }}>
+              Для малышей
+            </Typography>
           </CardContent>
         </Card>
 
         <Card
-          sx={{ maxWidth: 345 }}
           sx={{
             backgroundColor: "rgba(255, 255, 255, 0)",
             border: "none",
@@ -123,10 +127,13 @@ const Hero2 = () => {
             alignItems: "center",
             flexDirection: "column",
             margin: "10px",
+            maxWidth: 345,
           }}
         >
           <CardContent sx={{ backgroundColor: "rgba('255, 255, 255, 0')" }}>
-            <Typography>SHOP BABY</Typography>
+            <Typography sx={{ color: "white", fontWeight: "bold" }}>
+              Для мальчиков
+            </Typography>
           </CardContent>
           <CardActionArea>
             <CardMedia

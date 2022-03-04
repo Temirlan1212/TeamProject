@@ -25,10 +25,6 @@ const Footer2 = () => {
 
           <p class="footer-links">
             <Link className="teg_a" to="/">
-              Дом
-            </Link>
-
-            <Link className="teg_a" to="/">
               Главная
             </Link>
 
@@ -45,7 +41,7 @@ const Footer2 = () => {
             </Link>
           </p>
 
-          <p class="footer-company-name">Company Name © 2015</p>
+          <p class="footer-company-name">Company Name © 2004</p>
         </div>
 
         <div class="footer-center" style={{}}>
@@ -57,11 +53,12 @@ const Footer2 = () => {
               marginTop: "30px",
             }}
           >
-            <CheckroomIcon sx={{ color: "white", marginRight: "10px" }} />
+            <CheckroomIcon sx={{ color: "#1f1d1d", marginRight: "10px" }} />
             <p>
-              <span style={{ color: "brown", fontWeight: 700 }}>
-                444 S. Cedros Ave
+              <span style={{ color: "#1f1d1d", fontWeight: 700 }}>
+                Молодая Гвардия / Токтогула
               </span>
+              ТЦ РАХАТ БИШКЕК
             </p>
           </div>
 
@@ -72,9 +69,9 @@ const Footer2 = () => {
               alignItems: "center",
             }}
           >
-            <CallIcon sx={{ color: "white", marginRight: "10px" }} />
+            <CallIcon sx={{ color: "#1f1d1d", marginRight: "10px" }} />
             <Link to="/">
-              <span style={{ color: "brown" }}>+(996) 771 53 96 10</span>
+              <span style={{ color: "#1f1d1d" }}>+(996) 771 53 96 10</span>
             </Link>
           </div>
 
@@ -85,11 +82,11 @@ const Footer2 = () => {
               alignItems: "center",
             }}
           >
-            <BusinessIcon sx={{ color: "white", marginRight: "10px" }} />
+            <BusinessIcon sx={{ color: "#1f1d1d", marginRight: "10px" }} />
             <p>
               <Link to="mailto:support@company.com">
                 {" "}
-                <span style={{ color: "brown", fontWeight: 700 }}>
+                <span style={{ color: "#1f1d1d", fontWeight: 700 }}>
                   {" "}
                   support@company.com
                 </span>
@@ -101,9 +98,7 @@ const Footer2 = () => {
         <div class="footer-right">
           <hr style={{ maxWidth: "600px", marginTop: "20px" }}></hr>
           <p class="footer-company-about" style={{ marginTop: "30px" }}>
-            <span>About the company</span>
-            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
-            euismod convallis velit, eu auctor lacus vehicula sit amet.
+            <span>Мы в соц.сетях</span>
           </p>
 
           <div className="icon_elem">
@@ -121,6 +116,11 @@ const Footer2 = () => {
               <img src={WhatsApp} alt="" />
             </Link>
           </div>
+        </div>
+        <div className="rights">
+          2004-2022 © Wildberries — модный интернет-магазин одежды, обуви и
+          аксессуаров для малышей.
+          <br /> Все права защищены.
         </div>
       </footer>
     </div>

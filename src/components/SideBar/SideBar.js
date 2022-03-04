@@ -25,9 +25,8 @@ const SideBar = () => {
               value="jackets"
               onClick={(e) => fetchByParams("type", e.target.value)}
               label="куртки"
-              sx={{ display: "inline-block" }}
+              sx={{ display: "inline-block", fontWeight: 900, color: "brown" }}
               variant="standard"
-              sx={{ fontWeight: 900, color: "brown" }}
             >
               куртки
             </Button>
@@ -35,8 +34,7 @@ const SideBar = () => {
               value="t-shirts"
               onClick={(e) => fetchByParams("type", e.target.value)}
               label="футболки"
-              sx={{ display: "inline-block" }}
-              sx={{ fontWeight: 900, color: "brown" }}
+              sx={{ display: "inline-block", fontWeight: 900, color: "brown" }}
             >
               футболки
             </Button>
@@ -44,8 +42,7 @@ const SideBar = () => {
               value="skirts"
               onClick={(e) => fetchByParams("type", e.target.value)}
               label="юбки"
-              sx={{ display: "inline-block" }}
-              sx={{ fontWeight: 900, color: "brown" }}
+              sx={{ display: "inline-block", fontWeight: 900, color: "brown" }}
             >
               юбки
             </Button>
@@ -53,17 +50,24 @@ const SideBar = () => {
               value="ropmpers"
               onClick={(e) => fetchByParams("type", e.target.value)}
               label="пижамы"
-              sx={{ display: "inline-block" }}
-              sx={{ fontWeight: 900, color: "brown" }}
+              sx={{ display: "inline-block", fontWeight: 900, color: "brown" }}
             >
               пижамы
+            </Button>
+
+            <Button
+              value="hats"
+              onClick={(e) => fetchByParams("type", e.target.value)}
+              label="шапки"
+              sx={{ display: "inline-block", fontWeight: 900, color: "brown" }}
+            >
+              шапки
             </Button>
             <Button
               value="all"
               onClick={(e) => fetchByParams("type", e.target.value)}
               label="все"
-              sx={{ display: "inline-block" }}
-              sx={{ fontWeight: 900, color: "brown" }}
+              sx={{ display: "inline-block", fontWeight: 900, color: "brown" }}
             >
               все
             </Button>
