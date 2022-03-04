@@ -98,7 +98,7 @@ export default function Login() {
                 type="button"
                 fullWidth
                 variant="contained"
-                sx={{ mt: 3, mb: 2 }}
+                sx={{ mt: 3, mb: 2, backgroundColor: "brown" }}
                 onClick={handleSignUp}
               >
                 Sign Up
@@ -111,7 +111,7 @@ export default function Login() {
                   Forgot password?
                 </Link>
               </Grid> */}
-              <Grid item>
+              <Grid item sx={{ marginBottom: "30px" }}>
                 {hasAccount ? (
                   <Link
                     href="#"

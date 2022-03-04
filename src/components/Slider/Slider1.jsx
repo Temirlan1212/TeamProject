@@ -23,8 +23,6 @@ function Slider1() {
         maxWidth: { lg: "1100px", sm: "700px" },
         padding: "30px 0",
         display: { sm: "none", lg: "block", md: "block" },
-        backgroundColor: "beige",
-        border: "2px solid grey",
       }}
     >
       <h1 style={{ color: "#616161" }}>Большой выбор</h1>

@@ -7,7 +7,7 @@
 section {
   width: 100%;
   display: inline-block;
-  background: rgb(252, 148, 148);
+
   height: 50vh;
   text-align: center;
   font-size: 22px;
@@ -16,7 +16,8 @@ section {
 }
 
 .footer-distributed {
-  background: rgb(252, 148, 148);
+  background-image: url("https://www.acmetc.com/wp-content/uploads/2019/04/cloud-pink.png");
+  background-size: cover;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -41,7 +42,7 @@ section {
 /* The company logo */
 
 .footer-distributed h3 {
-  color: #ffffff;
+  color: #1f1d1d;
   font: normal 36px "Open Sans", cursive;
   margin: 0;
 }
@@ -54,7 +55,7 @@ section {
 /* Footer links */
 
 .footer-distributed .footer-links {
-  color: #ffffff;
+  color: #1f1d1d;
   margin: 20px 0 12px;
   padding: 0;
 }
@@ -82,7 +83,7 @@ section {
 
 .footer-distributed .footer-center i {
   background-color: #33383b;
-  color: #ffffff;
+  color: #1f1d1d;
   font-size: 25px;
   width: 38px;
   height: 38px;
@@ -100,7 +101,7 @@ section {
 
 .footer-distributed .footer-center p {
   display: inline-block;
-  color: #ffffff;
+  color: #1f1d1d;
   font-weight: 400;
   vertical-align: middle;
   margin: 0;
@@ -125,7 +126,7 @@ section {
   font-weight: 300;
   font-size: 20px;
   left: 0;
-  color: #fff;
+  color: #1f1d1d;
   display: inline-block;
   padding-right: 5px;
 }
@@ -150,7 +151,7 @@ section {
 
 .footer-distributed .footer-company-about span {
   display: block;
-  color: #ffffff;
+  color: #1f1d1d;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -169,7 +170,7 @@ section {
   border-radius: 2px;
 
   font-size: 20px;
-  color: #ffffff;
+  color: #1f1d1d;
   text-align: center;
 
   margin-right: 3px;
